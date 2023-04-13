@@ -153,9 +153,16 @@ search:focus {
   justify-content: center;
 }
 
-#lower-user, .trending-user {
+#lower-user, 
+.trending-user {
   width: 40px;
   height: 40px;
+  transform: translateY(50%);
+}
+
+#lower-user {
+  justify-content: center;
+  align-items: center;
 }
 
 .username {
@@ -220,7 +227,7 @@ li {
   transition: all .05s ease;
 }
 
-  li:hover {
+li:hover {
   background: darkorange;
   cursor: pointer;
 }
@@ -323,7 +330,7 @@ a:hover {
   background-color: white;
   border-top: solid darkorange 3px;
   border-radius: 10px;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .announce-title {
@@ -340,7 +347,26 @@ a:hover {
 }
 
 .trend {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3px;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+
+.trend-text {
   display: flex;
+  flex-direction: column;
+  padding: -3px;
+}
+
+h4 {
+  margin-bottom: -3px;
+}
+
+.user-text  {
+  margin-top: 0px;
+  color: rgb(101, 100, 100);
 }
 
 .footer {
@@ -348,4 +374,9 @@ a:hover {
   grid-column: 1 / 3;
   align-items: center;
   text-align: center;
+  transition: all .4s ease;
+}
+
+.footer-link:hover {
+  color: darkorange
 }
