@@ -81,12 +81,15 @@
       <div class="profile">
         <div class="notifications"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg></div>
         <div class="icon">
-          <img class="user-icon" src="./img/user.png" alt="User icon">
+          <img id="upper-user" class="user-icon" src="./img/user.png" alt="User icon">
         </div>
-        <div class="username">Odin</div>
+        <div class="username">Odin (@draupnir)</div>
       </div>
-      <div class="welcome"><h2 class="greeting-text">Good morning,</h2> 
-        <h1 class="greeting-name">Odin</h1></div>
+      <div class="welcome">
+       <div class="welcome-img"><img id="welcome-user" class="user-icon" src="./img/user.png" alt="User icon"></div> 
+        <h2 class="greeting-text">Good morning,</h2> 
+        <h1 class="greeting-name">Odin</h1>
+      </div>
       <div class="buttons-container">
         <button class="header-btn new">New</button>
         <button class="header-btn upload">Upload</button>
@@ -221,7 +224,14 @@
         </div>
         <h2 class="section trending">Trending</h2>
         <div class="announce-box">
-          
+          <div class="trend">
+            <img id="lower-user" class="trending-user" src="./img/user.png">
+            <h4>@draupnir</h4>
+            <p>The Odin Project</p>
+          </div>
+          <div class="trend"></div>
+          <div class="trend"></div>
+          <div class="trend"></div>
         </div>
       </div>
     </div>
