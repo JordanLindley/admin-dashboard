@@ -228,33 +228,36 @@ a:hover {
 }
 
 .projects {
-  justify-content: center;
-  text-align: center;
+  text-align: left;
   font-size: 32px;
   margin-bottom: -3px;
   margin-top: -3px;
+  padding-left: 1rem;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   padding: 1rem;
   background-color: white;
   border: 1px solid white;
   border-radius: 10px;
   box-shadow: 0 4px 4px rgb(181, 179, 179);
   border-top: solid 3px darkorange;
+  transition: all .4s ease;
 }
 
-.stripe {
-  background-color: darkorange;
-  width: 75%;
+.card:hover  {
+  border-top: solid 3px rgb(48, 172, 249);
 }
 
 .actions {
-  padding: 1rem;
+  padding:-top 1rem;
   gap: 1rem;
   display: flex;
   justify-content: flex-end;
   position: relative;
+  margin-bottom: 0px;
 }
 
 .action {
@@ -272,6 +275,39 @@ a:hover {
 .action:active {
   color: rgb(1, 31, 85);
   scale: .9;
+}
+
+.right-panel {
+  padding-right: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.announcements {
+  margin-top: -33px;
+  padding-right: 1rem;
+  text-align: left;
+}
+
+.announce-box {
+  background-color: white;
+  border-top: solid darkorange 3px;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.announce-title {
+  margin-top: 3px;
+}
+
+.announce-text {
+  margin-top: 2px;
+}
+
+.line {
+  border-top: rounded 3px gray;
+  opacity: 0.5;
 }
 
 .footer {
